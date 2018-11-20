@@ -1,0 +1,98 @@
+PODS:
+  - AVOSCloud (4.2.0)
+  - DGElasticPullToRefresh (1.1)
+  - ISEmojiView (0.0.4)
+  - Material (2.6.3):
+    - Material/Core (= 2.6.3)
+  - Material/Core (2.6.3)
+  - MJRefresh (3.1.12)
+  - MOBFoundation (2.2.17)
+  - Popover.OC (1.0)
+  - RSKImageCropper (1.6.1)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - ShareSDK3 (3.6.2.1):
+    - MOBFoundation
+    - ShareSDK3/ShareSDK (= 3.6.2.1)
+  - ShareSDK3/ShareSDK (3.6.2.1):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKPlatforms/QQ (3.6.2.1):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.6.2.1):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKPlatforms/WeChat (3.6.2.1):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKUI (3.6.2.1):
+    - MOBFoundation
+  - SKPhotoBrowser (3.1.4)
+  - SlackTextViewController (1.9.5)
+  - SnapKit (3.0.2)
+  - SVProgressHUD (2.1.2)
+  - SwifterSwift (1.6.3)
+  - WechatOpenSDK (1.7.7)
+  - WeiboSDK (3.2.0)
+  - YYKeyboardManager (1.0.1)
+
+DEPENDENCIES:
+  - AVOSCloud
+  - DGElasticPullToRefresh
+  - ISEmojiView
+  - Material (~> 2.0)
+  - MJRefresh
+  - MOBFoundation
+  - Popover.OC
+  - RSKImageCropper
+  - SDWebImage (~> 3.8)
+  - ShareSDK3
+  - ShareSDK3/ShareSDKPlatforms/QQ
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo
+  - ShareSDK3/ShareSDKPlatforms/WeChat
+  - ShareSDK3/ShareSDKUI
+  - SKPhotoBrowser (from `https://github.com/suzuki-0000/SKPhotoBrowser.git`, branch `swift3`)
+  - SlackTextViewController
+  - SnapKit (~> 3.0.2)
+  - SVProgressHUD
+  - SwifterSwift
+  - WechatOpenSDK
+  - WeiboSDK (from `https://github.com/sinaweibosdk/weibo_ios_sdk.git`)
+  - YYKeyboardManager
+
+EXTERNAL SOURCES:
+  SKPhotoBrowser:
+    :branch: swift3
+    :git: https://github.com/suzuki-0000/SKPhotoBrowser.git
+  WeiboSDK:
+    :git: https://github.com/sinaweibosdk/weibo_ios_sdk.git
+
+CHECKOUT OPTIONS:
+  SKPhotoBrowser:
+    :commit: c575b55599976b86646a08c7e9aa8569e66ff72c
+    :git: https://github.com/suzuki-0000/SKPhotoBrowser.git
+  WeiboSDK:
+    :commit: cc559ec82e8e89f955e7ecbd60a7565f8b992d86
+    :git: https://github.com/sinaweibosdk/weibo_ios_sdk.git
+
+SPEC CHECKSUMS:
+  AVOSCloud: 5446ad0320f4942cce1a036d131992cd1115db99
+  DGElasticPullToRefresh: 28f11a6026302a90f8ffebbc6e24748e584dddd3
+  ISEmojiView: 04bea1836abeb628af1d2ae2b5617fd4dfa813ec
+  Material: af607a7ec0e9978ef85cf189a3d8ceeeb650400f
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MOBFoundation: fa12570bb16a7655dca3b3472ce6cd962e7ff5e3
+  Popover.OC: b63f258fb9a9f480d23db9e486f9b165cce17ef8
+  RSKImageCropper: 0df8c99e77a8ea7ca7a8b83ef468556f31584254
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  ShareSDK3: 3c531b5e64576e4b947127b9b1f46b685dfa3b37
+  SKPhotoBrowser: 14b08bef65c1720f6edc728ab7f2b1f8ca76f453
+  SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  SwifterSwift: 76bf942a17769ebf8fb77f89138cbbd525c039c0
+  WechatOpenSDK: cbd332148eb792d444ed4eec94f421d98f2046ee
+  WeiboSDK: a678016504873d4c12c35d156eabd232d19b3d3f
+  YYKeyboardManager: ff53d2e80d1808567a7f004028bd200d9469a89f
+
+PODFILE CHECKSUM: a15451549ec5ab03bb69f3c8e6f763596f240d49
+
+COCOAPODS: 1.0.1

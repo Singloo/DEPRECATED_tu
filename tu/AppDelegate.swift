@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import AVOSCloud
+import SnapKit
+import Material
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,8 +18,59 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+
+//        window = UIWindow(frame: UIScreen.main.bounds)
+
+        
+
+    
+        
+    
+        ShareSDK.registerApp("1e17e681332be", activePlatforms: [SSDKPlatformType.typeSinaWeibo.rawValue,SSDKPlatformType.typeWechat.rawValue,SSDKPlatformType.typeQQ.rawValue], onImport: { (platform : SSDKPlatformType) in
+            switch platform
+            {
+            case SSDKPlatformType.typeSinaWeibo:
+                ShareSDKConnector.connectWeibo(WeiboSDK.classForCoder())
+            case SSDKPlatformType.typeWechat:
+                ShareSDKConnector.connectWeChat(WXApi.classForCoder())
+            case SSDKPlatformType.typeQQ:
+                ShareSDKConnector.connectQQ(QQApiInterface.classForCoder(), tencentOAuthClass: TencentOAuth.classForCoder())
+            default:
+                break
+            }
+            
+        }, onConfiguration: { (platform : SSDKPlatformType, appInfo : NSMutableDictionary?) in
+            
+            switch platform
+            {
+            case SSDKPlatformType.typeSinaWeibo:
+                appInfo?.ssdkSetupSinaWeibo(byAppKey: "4081184042",
+                                            appSecret : "3b2128fe5aba752b0676c25fd83837d7",
+                                            redirectUri : "https://api.weibo.com/oauth2/default.html",
+                                            authType : SSDKAuthTypeBoth)
+                
+            case SSDKPlatformType.typeWechat:
+                appInfo?.ssdkSetupWeChat(byAppId: "wx68b561de5967c188", appSecret: "c16ce4dd78ce51edcfaa5c94e334f308")
+                
+            case SSDKPlatformType.typeQQ:
+                appInfo?.ssdkSetupQQ(byAppId: "1106179840",
+                                     appKey : "JgTV6T5R19sByK1F",
+                                     authType : SSDKAuthTypeWeb)
+            default:
+                break
+            }
+        }
+
+        )
+        
+        
+        AVOSCloud.setApplicationId("2lsTHbqp6t7HMljJFyhFGvMY-gzGzoHsz", clientKey: "uzypjlaPhh2hedqABjv2VT7k")
+        
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
